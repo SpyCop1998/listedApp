@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_margin="10dp"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <ImageView
+            android:background="@drawable/setting_img"
+            android:id="@+id/icon_website"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:src="@drawable/ic_launcher_background" />
+
+        <TextView
+            android:textColor="@color/black"
+            android:id="@+id/linkName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/icon_website"
+
+            android:text="Sample link name" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linkName"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/icon_website"
+            android:text="22 Aug 2022" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+            android:textColor="@color/black"
+            android:id="@+id/noClicks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginLeft="10dp"
+            android:text="2253" />
+
+        <TextView
+            android:layout_marginRight="10dp"
+
+            android:id="@+id/clicls"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linkName"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="7dp"
+            android:text="Clicks" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@id/icon_website"
+            android:background="@color/lightBlue1"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:id="@+id/link"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:text="https://www.example.com"
+                android:textColor="@color/lightBlue"
+                />
+
+            <ImageView
+                android:layout_marginRight="10dp"
+                android:id="@+id/icon_copy"
+                android:layout_width="15dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="7dp"
+                android:src="@drawable/copy_1_svgrepo_com" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
